@@ -4,6 +4,13 @@
     <img alt="Open Parcels" src="https://raw.githubusercontent.com/open-parcels/open-parcels/master/docs/branding/banner-on-light.png" width="640">
   </picture>
 </p>
+<p align="center">
+  <a href="https://hub.docker.com/r/bluscream1/open-parcels"><img alt="Docker Hub pulls" src="https://img.shields.io/docker/pulls/bluscream1/open-parcels?logo=docker&label=pulls"></a>
+  <a href="https://github.com/open-parcels/open-parcels"><img alt="Server stars" src="https://img.shields.io/github/stars/open-parcels/open-parcels?label=server%20stars&style=flat"></a>
+  <a href="https://github.com/open-parcels/open-parcels-ha"><img alt="Integration stars" src="https://img.shields.io/github/stars/open-parcels/open-parcels-ha?label=HA%20integration%20stars&style=flat"></a>
+  <a href="https://github.com/open-parcels/open-parcels-extension/releases"><img alt="Extension downloads" src="https://img.shields.io/github/downloads/open-parcels/open-parcels-extension/total?label=extension%20downloads"></a>
+</p>
+
 # Open Parcels
 
 **Self-hosted parcel and order tracking.** One service on your own hardware follows about 90
