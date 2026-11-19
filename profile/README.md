@@ -13,7 +13,7 @@
 
 # Open Parcels
 
-**Self-hosted parcel and order tracking.** One service on your own hardware follows about 90
+**Self-hosted parcel and order tracking.** One service on your own hardware follows about 95
 carriers, signs in to carrier and shop accounts, reads shipping mails, shows the courier live on a
 map and keeps a delivery calendar (also as an ICS feed). It runs on Docker, on Unraid and as a Home
 Assistant app, and its Home Assistant integration gives every carrier account, shop and mailbox its
