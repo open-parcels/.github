@@ -1,3 +1,9 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/open-parcels/open-parcels/master/docs/branding/banner-on-dark.png">
+    <img alt="Open Parcels" src="https://raw.githubusercontent.com/open-parcels/open-parcels/master/docs/branding/banner-on-light.png" width="640">
+  </picture>
+</p>
 # Open Parcels
 
 **Self-hosted parcel and order tracking.** One service on your own hardware follows about 90
@@ -20,7 +26,8 @@ own device.
 |---|---|
 | [open-parcels](https://github.com/open-parcels/open-parcels) | The server and web UI: carrier plug-ins, mail parsing, scheduler, event stream, Docker image and Unraid template. |
 | [open-parcels-rules](https://github.com/open-parcels/open-parcels-rules) | Shared knowledge: tracking-number formats, carrier status tables, delivery-date phrases and shipping-mail rules, with a TypeScript engine. |
-| [open-parcels-ha](https://github.com/open-parcels/open-parcels-ha) | The Home Assistant integration (HACS custom repository): a device per source, an entity per parcel. |
+| [open-parcels-ha](https://github.com/open-parcels/open-parcels-ha) | The Home Assistant integration (HACS custom repository): a device per source, a tracker per open parcel. |
+| [open-parcels-extension](https://github.com/open-parcels/open-parcels-extension) | Companion browser extension: one-click sign-in for carriers whose login ends on an app address. |
 
 ## Quick start
 
