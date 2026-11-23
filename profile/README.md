@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/open-parcels/open-parcels/master/docs/branding/banner-on-dark.png">
-    <img alt="Open Parcels" src="https://raw.githubusercontent.com/open-parcels/open-parcels/master/docs/branding/banner-on-light.png" width="640">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/open-parcels/open-parcels/main/docs/branding/banner-on-dark.png">
+    <img alt="Open Parcels" src="https://raw.githubusercontent.com/open-parcels/open-parcels/main/docs/branding/banner-on-light.png" width="640">
   </picture>
 </p>
 <p align="center">
@@ -24,7 +24,7 @@ own device.
 ## Repositories
 
 ```
- open-parcels-rules ──(npm package)──▶ open-parcels ──(REST + event stream)──▶ open-parcels-ha
+ open-parcels-rules ──(bundled package)─▶ open-parcels ──(REST + event stream)──▶ open-parcels-ha
  tracking-number formats,              server + web UI,                        Home Assistant
  status tables, mail rules             carrier plug-ins, image                 integration
 ```
@@ -34,14 +34,16 @@ own device.
 | [open-parcels](https://github.com/open-parcels/open-parcels) | The server and web UI: carrier plug-ins, mail parsing, scheduler, event stream, Docker image and Unraid template. |
 | [open-parcels-rules](https://github.com/open-parcels/open-parcels-rules) | Shared knowledge: tracking-number formats, carrier status tables, delivery-date phrases and shipping-mail rules, with a TypeScript engine. |
 | [open-parcels-ha](https://github.com/open-parcels/open-parcels-ha) | The Home Assistant integration (HACS custom repository): a device per source, a tracker per open parcel. |
+| [open-parcels-ha-apps](https://github.com/open-parcels/open-parcels-ha-apps) | The Home Assistant app (add-on): runs the server and web UI inside Home Assistant, opened from the sidebar. |
 | [open-parcels-extension](https://github.com/open-parcels/open-parcels-extension) | Companion browser extension: one-click sign-in for carriers whose login ends on an app address. |
 
 ## Quick start
 
 - **Website and install guides:** https://open-parcels.github.io
-- **Docker Compose:** [docker-compose.yml](https://github.com/open-parcels/open-parcels/blob/master/docker-compose.yml)
-- **Unraid:** [template](https://github.com/open-parcels/open-parcels/blob/master/unraid/open-parcels.xml)
-- **Home Assistant:** add `https://github.com/open-parcels/open-parcels-ha` to HACS as a custom integration repository.
+- **Docker Compose:** [docker-compose.yml](https://github.com/open-parcels/open-parcels/blob/main/docker-compose.yml). Version 2 is published as `bluscream1/open-parcels:dev` (amd64, arm64); `:latest` is still version 1 until 2.0.0.
+- **Unraid:** [template](https://github.com/open-parcels/open-parcels/blob/main/unraid/open-parcels.xml)
+- **Home Assistant app:** [add the app repository](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fopen-parcels%2Fopen-parcels-ha-apps), then install **Open Parcels**.
+- **Home Assistant integration:** add `https://github.com/open-parcels/open-parcels-ha` to HACS as a custom integration repository.
 
 Carrier interfaces are mostly unofficial and can break at any time. Open Parcels is not affiliated
 with any carrier or shop.
