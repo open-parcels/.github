@@ -1,0 +1,47 @@
+name: Bug report
+description: Something does not work as described.
+labels: [bug]
+body:
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Personal data
+      description: Issues are public. Tracking numbers, order numbers, names, addresses, e-mail addresses and tokens identify you.
+      options:
+        - label: I removed or replaced all tracking numbers, order numbers, names, addresses, e-mails and tokens below.
+          required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Server / web UI (open-parcels)
+        - Home Assistant integration (open-parcels-ha)
+        - Home Assistant app (open-parcels-ha-apps)
+        - Browser extension (open-parcels-extension)
+        - Rules / carrier data (open-parcels-rules)
+        - Website
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Image tag or commit (Status page), integration or app version.
+    validations:
+      required: true
+  - type: input
+    id: carrier
+    attributes:
+      label: Carrier, shop or mailbox involved
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or diagnostics (redacted)
+      render: text

@@ -1,0 +1,21 @@
+name: Feature request
+description: Something new, or a carrier, shop or mailbox to support.
+labels: [enhancement]
+body:
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Personal data
+      options:
+        - label: My request contains no real tracking numbers, order numbers, names, addresses, e-mails or tokens.
+          required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like, and why?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you considered
