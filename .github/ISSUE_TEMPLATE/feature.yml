@@ -1,5 +1,5 @@
 name: Feature request
-description: Something new, or a carrier, shop or mailbox to support.
+description: Something new, or a carrier, shop or inbox to support.
 labels: [enhancement]
 body:
   - type: checkboxes
@@ -7,7 +7,7 @@ body:
     attributes:
       label: Personal data
       options:
-        - label: My request contains no real tracking numbers, order numbers, names, addresses, e-mails or tokens.
+        - label: My request contains no real tracking numbers, order numbers, names, addresses, emails or tokens.
           required: true
   - type: textarea
     id: what

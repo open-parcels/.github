@@ -6,9 +6,9 @@ body:
     id: privacy
     attributes:
       label: Personal data
-      description: Issues are public. Tracking numbers, order numbers, names, addresses, e-mail addresses and tokens identify you.
+      description: Issues are public. Tracking numbers, order numbers, names, addresses, email addresses and tokens identify you.
       options:
-        - label: I removed or replaced all tracking numbers, order numbers, names, addresses, e-mails and tokens below.
+        - label: I removed or replaced all tracking numbers, order numbers, names, addresses, emails and tokens below.
           required: true
   - type: dropdown
     id: component
@@ -33,7 +33,7 @@ body:
   - type: input
     id: carrier
     attributes:
-      label: Carrier, shop or mailbox involved
+      label: Carrier, shop or inbox involved
   - type: textarea
     id: what
     attributes:
