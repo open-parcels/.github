@@ -27,7 +27,7 @@ body:
     id: version
     attributes:
       label: Version
-      description: Image tag or commit (Status page), integration or app version.
+      description: Image tag or commit (Status page), HA integration or HA app version.
     validations:
       required: true
   - type: input
